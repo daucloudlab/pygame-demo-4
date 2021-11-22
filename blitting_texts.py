@@ -16,6 +16,9 @@ fonts = pygame.font.get_fonts()
 for font in fonts:
     print(font)
 
+calibri_font_path = pygame.font.match_font('calibri')
+print("Calibri font path ---> ", calibri_font_path)
+
 system_font = pygame.font.SysFont('Calibri', 64)
 system_font_surface = system_font.render("Dragon rules!", True, GREEN, DARKGREEN)
 system_font_rect = system_font_surface.get_rect()
